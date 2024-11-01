@@ -1,0 +1,18 @@
+<h1>About Us</h1>
+<div class="about-container">
+  <p>Welcome to our Angular application! This project is designed to demonstrate assigigmnent of handling data.</p>
+  <p>While navigating from from this about page to Dashboard no API calling is happining again.</p>
+  <p>Data displayed on dashboard is fetch after calling API and hence no api call is happing onec its being called, and even data is not stored in ls or in catch</p>
+</div>
+<button (click)="navigateToDashboard()">Go to Dashboard</button>
+
+<div class="buzz-bee-container">
+  <h2>Buzz Bee Sequence</h2>
+  <button (click)="generateBuzzBeeSequence()">Generate Buzz Bee Sequence</button>
+  <p>
+    for multiple of 3 it will print buzz and for a multiple 5 it print bee, for both multiple it will print buzz bee.
+  </p>
+  <ul>
+    <li *ngFor="let item of buzzBeeSequence">{{ item }}</li>
+  </ul>
+</div>

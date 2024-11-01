@@ -1,0 +1,14 @@
+<h1>Dashboard</h1>
+<button (click)="navigateToAbout()">Go to About</button>
+
+<div class="dashboard-container">
+  <div class="data-section">
+    <h2>API Data</h2>
+    <div *ngIf="error" class="error">
+      {{ error }}
+    </div>
+    <div *ngIf="data">
+      <p>{{ data | json }}</p>
+    </div>
+  </div>
+</div>
